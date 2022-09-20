@@ -1,8 +1,27 @@
 body{
     text-align: center;
+    margin-top: 50px;
 }
-
+h1{
+    color: blueviolet;
+}
+h4{
+   color: cadetblue;
+}
 label{
     display: block;
-    padding-bottom: 1rem;
+    
+    padding-bottom: 1.5rem;
+}
+
+#submit-btn{
+    color: blue;
+    margin-bottom: 20px;
+    
+}
+
+#output-box{
+ 
+    color:red;
+
 }
