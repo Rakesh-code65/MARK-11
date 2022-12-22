@@ -17,6 +17,17 @@ function submitHandler(){
 
 
 function calaculateProfitAndLoss(initial, quantity, current){
+    if(!initial)
+        showOutput(`Invalid Initial Price`);
+    
+    if(!quantity)
+        showOutput(`Invalid Quantity`);
+    
+    if(!current)
+        showOutput(`Invalid current Price`);
+    
+    
+    
     if(initial > current){
         var loss = ((initial - current) * quantity);
         var lossPercentage = Math.trunc((loss / initial) * 100).toFixed(2) ;
